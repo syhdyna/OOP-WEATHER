@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Food Recommendations</title>
+
+    <link rel="stylesheet" href="food.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="store/images/logotravel.png" alt="Travel Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="weather.html"><i class="fas fa-cloud"></i>Weather</a></li>
+                <li><a href="clothing.html"><i class="fas fa-tshirt"></i>Clothing</a></li>
+                <li><a href="food.html"><i class="fas fa-burger"></i>Food and Drinks</a></li>
+                <li><a href="itenaries.html"><i class="fas fa-plane"></i>Travel Itinenaries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>FOOD AND DRINKS RECOMMENDATIONS</h1>
+
+        <div class="search-box">
+            <input type="text" id="temperatureInput" placeholder="Enter temperature in °C">
+            <button onclick="getFoodDrinkRecommendations()">SEARCH</button>
+        </div>
+
+        <div id="foodDrinkOutput"></div>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">Facebook</a>
+        </nav>
+        <br>
+        <p>&copy; 2024 Travel Dyna Advisories | Your go-to guide for adventures</p>
+    </footer>
+
+
+
+    <!-- Link to JavaScript file -->
+    <script src="food.js"></script>
+
+</body>
+</html>

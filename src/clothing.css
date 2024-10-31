@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    background-color: #adcad8;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    background-color: #1d4769;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    max-height: 80px;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+/* Navigation Section */
+header nav {
+    display: flex;              
+    justify-content: flex-end;   
+    width: 100%;                
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #b1a198; 
+    border-radius: 5px;
+}
+
+ /* Main Content Section */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-box button:hover {
+    background-color: #b1a198;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;  
+}
+
+.clothing-image {
+    max-width: 300px;  
+    margin: 0 10px;         
+    height: auto;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#recommendationOutput {
+    font-size: 18px;  
+    font-weight: bold;  
+    text-align: center;    
+    color: #000000; 
+    margin-top: 20px;          
+    margin-bottom: 20px;  
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #1d4769;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer nav a:hover {
+    color: white;
+    background-color: #b1a198; 
+    border-radius: 5px;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 10px 0 0; 
+}

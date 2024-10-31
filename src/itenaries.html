@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Travel Itineraries</title>
+
+    <link rel="stylesheet" href="itenaries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="store/images/logotravel.png" alt="Travel Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="weather.html"><i class="fas fa-cloud"></i>Weather</a></li>
+                <li><a href="clothing.html"><i class="fas fa-tshirt"></i>Clothing</a></li>
+                <li><a href="food.html"><i class="fas fa-burger"></i>Food and Drinks</a></li>
+                <li><a href="itenaries.html"><i class="fas fa-plane"></i>Travel Itineraries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Travel Itineraries Form Section -->
+        <div class="form-container">
+            <form id="travelItineraryForm">
+                <div class="title">TRAVEL ITINERARIES</div>
+                
+                <!-- Client Information -->
+                 <div class="section-title">CLIENT INFORMATION</div>
+                 <br><br>
+                 <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+                
+                <!-- Hotel Information -->
+                 <div class="section-title">HOTEL DETAILS</div>
+                 <br><br>
+                 <div class="form-group">
+                    <label for="hotelName">Hotel Name:</label>
+                    <input type="text" id="hotelName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkInTime">Check-in Time:</label>
+                    <input type="time" id="checkInTime" required>
+                
+                </div>
+                <div class="form-group">
+                    <label for="checkOutTime">Check-out Time:</label>
+                    <input type="time" id="checkOutTime" required>
+                </div>
+                
+                <!-- Daily Itineraries Information -->
+                 <div class="section-title">DAILY ITINERARIES</div>
+                 <br><br>
+                 <div class="form-group">
+                    <label for="activities">Activities:</label>
+                    <input type="text" id="activities" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget:</label>
+                    <input type="text" id="budget" required>
+                </div>
+                <br>
+                
+                <!-- Create Button -->
+                 <div class="button-container">
+                    <button id="btnCreate">CREATE</button>
+                    <button id="btnEdit">EDIT</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Display Itinerary Section -->
+        <div class="itinerary-box" id="displayItinerary" style="display: none;">
+            <h3 class="itinerary-title">ITINERARIES DETAILS</h3>
+            <hr>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+            <p><strong>Destination:</strong> <span id="displayDestination"></span></p>
+            <p><strong>Start Date:</strong> <span id="displayStartDate"></span></p>
+            <p><strong>End Date:</strong> <span id="displayEndDate"></span></p>
+            <p><strong>Hotel Name:</strong> <span id="displayHotelName"></span></p>
+            <p><strong>Check-in Time:</strong> <span id="displayCheckInTime"></span></p>
+            <p><strong>Check-out Time:</strong> <span id="displayCheckOutTime"></span></p>
+            <p><strong>Activities:</strong> <span id="displayActivities"></span></p>
+            <p><strong>Budget:</strong> <span id="displayBudget"></span></p>
+            <p><strong>Weather:</strong> <span id="displayWeather"></span></p>
+            <p><strong>Description:</strong> <span id="displayDescription"></span></p>
+            <br>
+
+            <div class="itinenary-button-container">
+                <button id="btnRead">READ</button>
+                <button id="btnUpdate">UPDATE</button>
+                <button id="btnDelete">DELETE</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">Facebook</a>
+        </nav>
+        <br>
+        <p>&copy; 2024 Travel Dyna Advisories | Your go-to guide for adventures</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="itenaries.js"></script>
+
+</body>
+</html>
+
